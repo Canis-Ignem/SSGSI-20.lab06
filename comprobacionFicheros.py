@@ -60,6 +60,7 @@ def isFake(f_original_file, fake_file):
     if not sameLines(original_lineas, fake_lines):
 
         return True
+    
     #Si la ultima linea del fichero falso no es exadecimal es falso
     if not isHex(fake_lines, len(original_lineas)):
 
@@ -77,4 +78,4 @@ def isFake(f_original_file, fake_file):
 
 
 #Si el fichero no es falso que no lo es, si lo es printeamos que no es
-print("El fichero no es falso" if not isFake("SGSSI-20.CB.06.txt","ficheroResultado13.txt") else "El fichero es falso")
+#print("El fichero no es falso" if not isFake("SGSSI-20.CB.06.txt","ficheroResultado13.txt") else "El fichero es falso")

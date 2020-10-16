@@ -1,4 +1,3 @@
-
 import md5
 import time
 import uuid
@@ -39,12 +38,13 @@ def AlteracionFicheroMD5(F):
             pass
         #Generamos un string hexadecimal aleatorio
         s = uuid.uuid4().hex
+        
         #Creamos nuestro nuevo fichero con permisos de escribit extra 'w+'
         newFile = open("nuevoFichero.txt","a")
         #Escribimos las lineas del otro fichero ademas de añadir los 8 primeros caracteres de s
         newFile.writelines(lineas)
         #Combertimos s a un string con un casteo str('')
-        newFile.write( str(s)[:8]+ " G13151719" )
+        newFile.write( str(s)[:8] + " G13151719" )
         #Cerramos el fichero para guardar los cambios
         newFile.close()
         #obtenemos su resumen md5 y contamos sus 0s
