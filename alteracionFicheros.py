@@ -4,6 +4,8 @@ import time
 import uuid
 import os
 
+#Tiempo en segundos
+MAXTIME = 60
 
 #Contamos por cuantos 0s empieza el resumen
 def count0(s):
@@ -29,7 +31,7 @@ def AlteracionFicheroMD5(F):
     end = time.time()
     max0 = 0
 
-    while end - start < 10 :
+    while end - start < MAXTIME :
         #eliminamos el fichero del intento anterior
         try:
             os.remove("nuevoFichero.txt")

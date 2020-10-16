@@ -4,6 +4,9 @@ import uuid
 import os
 import sha
 
+#Tiempo en segundos
+MAXTIME = 60
+
 #Para mas informacion sobre esta implementacion por favor revisar AlteracionFicheros.py
 
 def count0(s):
