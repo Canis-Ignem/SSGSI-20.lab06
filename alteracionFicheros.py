@@ -74,4 +74,4 @@ def AlteracionFicheroMD5(F):
 
     print(res)
 
-AlteracionFicheroMD5("SGSSI-20.CB.06.txt")
+#AlteracionFicheroMD5("SGSSI-20.CB.06.txt")

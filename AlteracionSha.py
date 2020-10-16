@@ -31,7 +31,7 @@ def AlteracionFicheroSHA(F):
     end = time.time()
     max0 = 0
 
-    while end - start < 60 :
+    while end - start < 10 :
         
         try:
             os.remove("nuevoFichero.txt")
@@ -47,7 +47,6 @@ def AlteracionFicheroSHA(F):
 
         brief = sha.sha(newFile.name)
         ceros = count0(str(brief))
-        print(ceros)
         if ceros > max0:
             max0 = ceros
             res = brief
@@ -64,3 +63,4 @@ def AlteracionFicheroSHA(F):
     except :
         pass
     print(res)
+#AlteracionFicheroSHA("SGSSI-20.CB.06.txt")

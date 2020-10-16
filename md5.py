@@ -11,4 +11,4 @@ def md5(filename):
         #Cogemos el conjunto de bytes y sacamos el resumen md5
         readable_hash = hs.md5(bytes).hexdigest();
         return readable_hash
-#print(md5("ficheroResultado19.txt"))
+#print(md5("ficheroResultado13.txt"))

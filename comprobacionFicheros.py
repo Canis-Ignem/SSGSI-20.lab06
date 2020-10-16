@@ -1,8 +1,4 @@
 import md5
-import copy
-import time
-import uuid
-import os
 
 #Recive las lineas de ambos ficheros y el parametro para la ultima linea
 #Si no coinciden es falso
@@ -23,7 +19,6 @@ def isHex(fl, ultLinea):
     #Linea apendice hexadecimal
     s = fl[ultLinea]
     S = s.split(" ")
-    print(S[0])
     if len(S) != 2:
         print("Error2.1")
         return False
