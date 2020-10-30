@@ -56,11 +56,11 @@ def AlteracionFicheroMD5(F):
             res = brief
             #Borramos el resultado anterior si existe
             try:
-                os.remove("./ficheroResultado13.txt")
+                os.remove("./ficheroSemana8.txt")
             except:
                 pass
             #Renombramos el fichero para no eliminarlo en la siguiente rotacion
-            os.rename(r"./nuevoFichero.txt",r"./ficheroResultado13.txt")
+            os.rename(r"./nuevoFichero.txt",r"./ficheroSemana8.txt")
         #Calculamos el tiempo al terminar
         end = time.time()
         #Sacamos cuanto hemos tardado en segundos
@@ -74,4 +74,4 @@ def AlteracionFicheroMD5(F):
 
     print(res)
 
-#AlteracionFicheroMD5("SGSSI-20.CB.06.txt")
+AlteracionFicheroMD5("SGSSI-20.CB.08.txt")
